@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing elements</title>
+</head>
+<body>
+    <p id="msg">Welcome Students</p>
+    <div class="ram">this is new company</div>
+    <div class="good">good</div>
+    <div class="good">good</div>
+    <div class="good">good</div>
+    <div class="bad">bad</div>
+    <div class="bad">bad</div>
+    <div class="bad">bad</div>
+    <div class="bad">bad</div>
+    <style>
+        #msg{
+            color: black;
+            background-color: red;
+        }
+    </style>
+    <script>
+        console.log(document.title)
+        console.log(document.getElementById('msg').innerHTML = 'this is karthik')
+        let a = document.getElementById('msg')
+        console.log(a)
+        console.log(a.innerHTML = "This is Tharun")
+
+        console.log(document.getElementsByClassName('ram')[0].innerHTML)
+        console.log(document.getElementsByTagName('div')[0].innerText = 'this is ram')
+        console.log(document.querySelector('.good').innerText)
+        let b = document.querySelectorAll('div')
+        console.log(b[0].style.background="brown")
+
+        console.log(a.style.background="green")
+    </script>
+</body>
+</html>
